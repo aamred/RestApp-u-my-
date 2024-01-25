@@ -46,7 +46,7 @@ public class PeopleController  {
 	@GetMapping()
 	public List<PersonDTO> getPeople(){
 		return peopleService.findAll().stream().map(this::convertToPersonDTO)
-				.collect(Collectors.toList());          //jackson convertiruet v json
+				.collect(Collectors.toList());          //jackson   convertiruet v json  
 	}
 	
 	@GetMapping("/{id}")
